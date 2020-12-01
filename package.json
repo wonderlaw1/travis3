@@ -4,8 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
+    "build": "ng build",
+    "build:prod": "ng build --prod --baseHref=\"https://wonderlaw1.github.io/test-app/\"",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
